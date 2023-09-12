@@ -21,11 +21,15 @@
       border-radius: 10px; 
       padding: 10px;
     }
-    body{
+    body, html{
       font-family: "Outfit", sans-serif;
       font-size: 15px;
       font-weight: 400;
-      text-align: center;
+      display: flex;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
     }
     img{
       width: 100%;
@@ -67,12 +71,14 @@ Weights: 400, 700
   <!--<img src=”/docs/assets/image-qr-code.png”> 
   </img>-->
   
-  <img src="http://kingster852.github.io/ex1/docs/assets/image-qr-code.png">
+  <div id="frame" class="rounded lightGray centered"> 
+  <img src="http://github.com/kingster852/ex1/raw/main/docs/assets/image-qr-code.png">
   </img>
-  <h1 font-size:15px;>Improve your front-end skills by building projects
-    </h1>
-    <div class="lightGray">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-      </div>
+  <div class="bold">
+    Improve your front-end skills by building projects
+    </div>
+  <div class="lightGray">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    </div>
   </div>
 
 </body>
