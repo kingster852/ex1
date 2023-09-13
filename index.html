@@ -13,10 +13,12 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     
-    .white       { background-color: hsl(0, 0%, 100%); }
-    .lightGray   { background-color: hsl(212, 45%, 89%); }
-    .grayishBlue { background-color: hsl(220, 15%, 55%); }
-    .darkBlue    { background-color: hsl(218, 44%, 22%); }
+    :root {
+    --white       : hsl(0, 0%, 100%); 
+    --lightGray   : hsl(212, 45%, 89%); 
+    --grayishBlue : hsl(220, 15%, 55%); 
+    --darkBlue    : hsl(218, 44%, 22%); 
+    }
     .rounded { 
       border-radius: 10px; 
       padding: 10px;
@@ -42,7 +44,7 @@
     #frame {
       max-width:250px;
     }
-    .container {background-color: white;}
+    .container {background-color: var(--white);}
 <!--
 White: hsl(0, 0%, 100%)
 Light gray: hsl(212, 45%, 89%)
